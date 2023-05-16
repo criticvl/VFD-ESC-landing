@@ -183,7 +183,7 @@ header>.home-content>div>a {
     color: var(--white);
     text-align: center;
     font-size: 1.6rem;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     padding: 1em;
 }
 
@@ -240,7 +240,7 @@ header>.home-content>div>a {
     background-color: var(--black);
     color: var(--white);
     padding: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 #team>.section-wrapper>.team-wrapper {
@@ -265,6 +265,7 @@ header>.home-content>div>a {
     aspect-ratio: 3 / 4;
     overflow: hidden;
     border: 1px solid var(--black);
+    border-bottom: none;
     filter: brightness(0.9);
     z-index: -2;
     padding-bottom: 12em;
@@ -295,10 +296,14 @@ header>.home-content>div>a {
 
 #team>.section-wrapper>.team-wrapper>.team-card>div>p {
     background-color: var(--white);
+    width: 100%;
+    height: 40%;
+    min-height: 16em;
     color: var(--black);
     text-shadow: none;
     padding: 0.9em;
     border: 1px solid var(--black);
+    border-top: none;
 }
 
 #team>.section-wrapper>.team-wrapper>.team-card>div>p>i {
