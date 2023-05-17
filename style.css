@@ -260,7 +260,7 @@ header>.home-content>div>a:hover {
     color: var(--primary-color);
     text-align: center;
     font-size: 2.4rem;
-    padding: 0.4em;
+    padding: 0.2em;
     border: 1px solid var(--black);
     background-color: var(--white);
 }
@@ -311,6 +311,7 @@ header>.home-content>div>a:hover {
     padding: 1em;
     background-color: var(--black);
     color: var(--white);
+    font-size: 0.9rem;
 }
 
 /*  */
@@ -327,7 +328,7 @@ header>.home-content>div>a:hover {
     font-weight: 600;
     text-align: center;
     color: var(--primary-color);
-    padding: 0.4em;
+    padding: 0.2em;
     border: 1px solid var(--black);
     background-color: var(--white);
 }
@@ -341,7 +342,7 @@ header>.home-content>div>a:hover {
 #team>.section-wrapper>.team-wrapper>.team-card {
     position: relative;
     height: 100%;
-    aspect-ratio: 3 / 4;
+    width: 32%;
     transition: filter ease-in-out 250ms;
 }
 
@@ -352,17 +353,20 @@ header>.home-content>div>a:hover {
 #team>.section-wrapper>.team-wrapper>.team-card>img {
     position: absolute;
     height: 100%;
-    aspect-ratio: 3 / 4;
+    width: 100%;
     overflow: hidden;
     border-bottom: none;
     filter: brightness(0.9);
-    padding-bottom: 12em;
+    background-color: var(--white);
+    object-fit: contain;
+    padding: 1em;
+    padding-bottom: 10em;
 }
 
 #team>.section-wrapper>.team-wrapper>.team-card>div {
     position: absolute;
     height: 100%;
-    aspect-ratio: 3 / 4;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -374,10 +378,8 @@ header>.home-content>div>a:hover {
 
 #team>.section-wrapper>.team-wrapper>.team-card>div>b {
     font-weight: 600;
-    font-size: 1.4rem;
-    width: max-content;
+    font-size: 1.8rem;
     overflow: hidden;
-    text-overflow: ellipsis;
     text-align: center;
 }
 
@@ -394,10 +396,29 @@ header>.home-content>div>a:hover {
 }
 
 #team>.section-wrapper>.team-wrapper>.team-card>div>p>i {
+    display: block;
     font-size: 1.2rem;
     font-weight: 600;
     text-decoration: underline;
     color: var(--primary-color);
+    margin-bottom: 0.6em;
+}
+
+@media only screen and (max-height: 700px) {
+    #team>.section-wrapper>.team-wrapper>.team-card>div{
+        gap: unset;
+        justify-content: space-between;
+    }
+
+    #team>.section-wrapper>.team-wrapper>.team-card>img{
+        padding-right: 50%;
+    }
+    #team>.section-wrapper>.team-wrapper>.team-card>div>b{
+        padding-top: 2em;
+        padding-left: 50%;
+        color: var(--black);
+        text-shadow: 2px 2px var(--white);
+    }
 }
 
 /*  */
@@ -442,6 +463,7 @@ header>.home-content>div>a:hover {
 
 
 footer {
+    width: 100%;
     background-color: #f0f0f0;
     height: 42vh !important;
 }
