@@ -501,6 +501,7 @@ footer ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-end;
     list-style: none;
     gap: 1em;
 }
