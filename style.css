@@ -587,8 +587,18 @@ footer .socials form button:hover {
 /*  */
 
 #no-mobile {
-    font-size: 4rem;
+    font-size: 3rem;
     display: none;
+    background-color: var(--white);
+    gap: 1em;
+    height: fit-content;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    border: 2px dashed var(--primary-color);
+    text-align: center;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -617,6 +627,14 @@ footer .socials form button:hover {
 
 @media only screen and (max-width: 600px) {
 
+    body{
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     header,
     main,
     footer,
@@ -626,17 +644,19 @@ footer .socials form button:hover {
 
     #no-mobile {
         display: flex;
-        gap: 1em;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        padding: 2em;
     }
 }
 
 @media only screen and (orientation: portrait) {
 
+    body{
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     header,
     main,
     footer,
@@ -646,11 +666,5 @@ footer .socials form button:hover {
 
     #no-mobile {
         display: flex;
-        gap: 1em;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        padding: 2em;
     }
 }
