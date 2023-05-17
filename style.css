@@ -130,7 +130,7 @@ section {
 header {
     width: 100%;
     height: 100vh;
-    background-image: url(./assets/main-bg.png);
+    background-image: url(./assets/main-bg.jpg);
     background-size: cover;
     color: var(--black);
 }
