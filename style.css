@@ -405,16 +405,19 @@ header>.home-content>div>a:hover {
 }
 
 @media only screen and (max-height: 700px) {
-    #team>.section-wrapper>.team-wrapper>.team-card>div{
+    #team>.section-wrapper>.team-wrapper>.team-card>div {
         gap: unset;
         justify-content: space-between;
     }
 
-    #team>.section-wrapper>.team-wrapper>.team-card>img{
+    #team>.section-wrapper>.team-wrapper>.team-card>img {
         padding-right: 50%;
     }
-    #team>.section-wrapper>.team-wrapper>.team-card>div>b{
+
+    #team>.section-wrapper>.team-wrapper>.team-card>div>b {
         padding-top: 2em;
+        padding-bottom: 1em;
+        padding-right: 1em;
         padding-left: 50%;
         color: var(--black);
         text-shadow: 2px 2px var(--white);
@@ -510,6 +513,7 @@ footer>div>p {
     justify-content: center;
     align-items: center;
     gap: 1em;
+    padding-top: 1em;
 }
 
 footer>div>p>a {
@@ -520,7 +524,7 @@ footer div {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -582,6 +586,11 @@ footer .socials form button:hover {
 
 /*  */
 
+#no-mobile {
+    font-size: 4rem;
+    display: none;
+}
+
 @media only screen and (max-width: 1400px) {
     :root {
         font-size: 14px;
@@ -603,5 +612,45 @@ footer .socials form button:hover {
 @media only screen and (max-width: 768px) {
     :root {
         font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    header,
+    main,
+    footer,
+    .spanner {
+        display: none;
+    }
+
+    #no-mobile {
+        display: flex;
+        gap: 1em;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+
+    header,
+    main,
+    footer,
+    .spanner {
+        display: none;
+    }
+
+    #no-mobile {
+        display: flex;
+        gap: 1em;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
     }
 }
