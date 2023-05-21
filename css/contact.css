@@ -1,0 +1,49 @@
+#contact {
+    height: 50vh;
+
+}
+
+#contact>.section-wrapper {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    border-radius: 0;
+}
+
+#contact>.section-wrapper>table {
+    background-color: var(--black);
+    color: var(--white);
+    height: 100%;
+    width: 48em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 1em;
+}
+
+#contact>.section-wrapper>table .space {
+    width: 2em;
+    text-align: center;
+}
+
+#contact>.section-wrapper>table td {
+    padding: 0.2em;
+}
+
+
+#contact>.section-wrapper>table th{
+    padding-bottom: 0.8em;
+}
+
+#contact>.section-wrapper>table span {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#contact>.section-wrapper>img {
+    width: 100%;
+    object-fit: cover;
+    background-color: var(--primary-color);
+}

@@ -9,9 +9,10 @@
     <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
     <title>VFD / ESC</title>
 </head>
+
 <body>
     <div id="no-mobile">Mobile Devices not supported <img src="./assets/logo_dark.svg"></div>
-    <header id="home">
+    <header>
         <nav>
             <div class="container">
                 <a href="#home"><img id="logo" src="./assets/logo.svg" alt="logo"></a>
@@ -24,6 +25,8 @@
                 </ul>
             </div>
         </nav>
+    </header>
+    <main id="home">
         <div class="container home-content">
             <div>
                 <h1>
@@ -37,8 +40,8 @@
                 <a href="#description">About the Project</a>
             </div>
         </div>
-    </header>
-    <main>
+    </main>
+    <div class="main-content">
         <section class="container" id="description">
             <div class="section-wrapper">
                 <h2>About the Project</h2>
@@ -67,7 +70,10 @@
             </div>
         </section>
         <section class="container" id="hsc">
-            hardware & software components placeholder
+            <div class="section-wrapper">
+                <h2>Hardware Components</h2>
+                <h2>Software Components</h2>
+            </div>
         </section>
         <section class="container" id="team">
             <div class="section-wrapper">
@@ -114,16 +120,30 @@
         </section>
         <section class="container" id="contact">
             <div class="section-wrapper">
-                <p>
-                    <span>Contact Us</span>
-                    <i><b>Akaki - </b>broman3100@gmail.com</i>
-                    <i><b>Sam - </b>sammirho@gmail.com</i>
-                    <i><b>Tornike - </b>ovashvili01@gmail.com</i>
-                </p>
+                <table>
+                    <tr>
+                        <th colspan="3"><span>Contact Us</span></th>
+                    </tr>
+                    <tr>
+                        <td><i><b>Akaki</b></i></td>
+                        <td class="space"><b>-</b></td>
+                        <td>broman3100@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><i><b>Sam</b></i></td>
+                        <td class="space"><b>-</b></td>
+                        <td>sammirho@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><i><b>Tornike</b></i></td>
+                        <td class="space"><b>-</b></td>
+                        <td>ovashvili01@gmail.com</td>
+                    </tr>
+                </table>
                 <img src="./assets/contact.jpg">
             </div>
         </section>
-    </main>
+    </div>
     <div class="spanner"></div>
     <footer>
         <div class="container">
@@ -150,7 +170,7 @@
                     </ul>
                 </nav>
             </div>
-            <p>© VFD/ESC Team 2023 <a href="#home"><img class="logo" src="./assets/logo_dark.svg" alt="logo"></a></p>
+            <p>© VFD/ESC Team 2023 <a href="#home"><img id="logo" src="./assets/logo_dark.svg" alt="logo"></a></p>
         </div>
     </footer>
     <script src="./script.js"></script>
