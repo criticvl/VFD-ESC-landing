@@ -15,6 +15,7 @@
     padding: 0.2em;
     border: 1px solid var(--black);
     background-color: var(--white);
+    user-select: none;
 }
 
 #team>.section-wrapper>.team-wrapper {

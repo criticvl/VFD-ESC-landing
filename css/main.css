@@ -15,7 +15,7 @@ main>.home-content {
 }
 
 main>.home-content>div {
-    width: 60%;
+    width: 75%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -24,17 +24,25 @@ main>.home-content>div {
     padding-top: 5rem;
 }
 
-main>.home-content>div>h1 {
+main>.home-content>div>table,
+main>.home-content>div>table h1 {
     font-weight: 600;
     font-size: 2.4rem;
+    width: fit-content;
+    user-select: none;
+}
+
+main>.home-content>div>table .space {
+    width: 2em;
+    text-align: center;
 }
 
 main>.home-content>div>p {
     color: #606060;
     font-weight: 300;
     font-size: 1.2rem;
-    max-width: 80%;
     margin: 0.4em 0;
+    user-select: none;
 }
 
 main>.home-content>div>a {

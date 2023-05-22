@@ -26,6 +26,12 @@
 #contact>.section-wrapper>table .space {
     width: 2em;
     text-align: center;
+    user-select: none;
+}
+
+#contact>.section-wrapper>table .clipboard{
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 #contact>.section-wrapper>table td {
@@ -40,6 +46,7 @@
 #contact>.section-wrapper>table span {
     font-size: 2rem;
     font-weight: 600;
+    user-select: none;
 }
 
 #contact>.section-wrapper>img {

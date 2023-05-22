@@ -15,13 +15,13 @@
     <header>
         <nav>
             <div class="container">
-                <a href="#home"><img id="logo" src="./assets/logo.svg" alt="logo"></a>
+                <a class="navButton" href="#home"><img id="logo" src="./assets/logo.svg" alt="logo"></a>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#description">Description</a></li>
-                    <li><a href="#hsc">Hardware & Software Components</a></li>
-                    <li><a href="#team">Team and Contribution</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a class="navButton active" href="#home">Home</a></li>
+                    <li><a class="navButton" href="#description">Description</a></li>
+                    <li><a class="navButton" href="#hsc">Hardware & Software Components</a></li>
+                    <li><a class="navButton" href="#team">Team and Contribution</a></li>
+                    <li><a class="navButton" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -29,9 +29,24 @@
     <main id="home">
         <div class="container home-content">
             <div>
-                <h1>
-                    Variable Frequency Drive/Electronic Speed Control (VFD/ESC)
-                </h1>
+                <table>
+                    <tr>
+                        <td>
+                            <h1>Variable Frequency Drive</h1>
+                        </td>
+                        <td class="space" rowspan="2">
+                            <div>-</div>
+                        </td>
+                        <td rowspan="2">
+                            <div>VFD/ESC</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1>Electronic Speed Control</h1>
+                        </td>
+                    </tr>
+                </table>
                 <p>
                     Welcome to the website showcasing our capstone project.
                     <br>
@@ -127,17 +142,23 @@
                     <tr>
                         <td><i><b>Akaki</b></i></td>
                         <td class="space"><b>-</b></td>
-                        <td>broman3100@gmail.com</td>
+                        <td>
+                            <div class="clipboard">broman3100@gmail.com</div>
+                        </td>
                     </tr>
                     <tr>
                         <td><i><b>Sam</b></i></td>
                         <td class="space"><b>-</b></td>
-                        <td>sammirho@gmail.com</td>
+                        <td>
+                            <div class="clipboard">sammirho@gmail.com</div>
+                        </td>
                     </tr>
                     <tr>
                         <td><i><b>Tornike</b></i></td>
                         <td class="space"><b>-</b></td>
-                        <td>ovashvili01@gmail.com</td>
+                        <td>
+                            <div class="clipboard">ovashvili01@gmail.com</div>
+                        </td>
                     </tr>
                 </table>
                 <img src="./assets/contact.jpg">
@@ -158,21 +179,28 @@
                         <li><a class="icon-linkedin" href="https://linkedin.com" target="_blank"></a></li>
                         <li><a class="icon-github" href="https://github.com" target="_blank"></a></li>
                     </ul>
-                    <form><input type="email" placeholder="Email Address"><button>Subscribe</button></form>
+                    <form id="emailSubForm">
+                        <input type="email" placeholder="Email Address" required>
+                        <button id="emailSubButton">Subscribe</button>
+                    </form>
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#description">Description</a></li>
-                        <li><a href="#hsc">Hardware & Software Components</a></li>
-                        <li><a href="#team">Team and Contribution</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a class="footerNavButton" href="#home">Home</a></li>
+                        <li><a class="footerNavButton" href="#description">Description</a></li>
+                        <li><a class="footerNavButton" href="#hsc">Hardware & Software Components</a></li>
+                        <li><a class="footerNavButton" href="#team">Team and Contribution</a></li>
+                        <li><a class="footerNavButton" href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
-            <p>© VFD/ESC Team 2023 <a href="#home"><img id="logo" src="./assets/logo_dark.svg" alt="logo"></a></p>
+            <p>© VFD/ESC Team 2023 <a class="footerNavButton" href="#home"><img id="logo" src="./assets/logo_dark.svg"
+                        alt="logo"></a></p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./smoothScroll.js"></script>
     <script src="./script.js"></script>
 </body>
 

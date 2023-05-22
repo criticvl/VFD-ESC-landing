@@ -36,12 +36,38 @@ header>nav>.container>ul {
     list-style: none;
 }
 
+header>nav>.container>ul li{
+    height: fit-content;
+    overflow: hidden;
+}
+
 header>nav>.container>ul>li>a {
     padding: 0.25em 0.5em;
     color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0.4em;
     transition: background-color ease-in-out 250ms;
 }
 
 header>nav>.container>ul>li>a:hover {
     background-color: var(--primary-color);
+}
+
+header>nav>.container>ul>li a::after{
+    content: '';
+    display: block;
+    height: 0.1em;
+    transform: translateY(0.2em);
+    width: 100%;
+    padding: 0 0.6em;
+    background-color: var(--white);
+    opacity: 0;
+    transition: opacity ease-in-out 250ms;
+}
+
+header>nav>.container>ul>li a.active::after{
+    opacity: 1;
 }
