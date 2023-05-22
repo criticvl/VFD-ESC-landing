@@ -161,7 +161,9 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px),
+only screen and (max-height: 600px),
+only screen and (orientation: portrait) {
 
     body {
         height: 100vh;
@@ -171,28 +173,7 @@ body::-webkit-scrollbar-thumb {
         align-items: center;
     }
 
-    main,
-    .main-content,
-    footer,
-    .spanner {
-        display: none;
-    }
-
-    #no-mobile {
-        display: flex;
-    }
-}
-
-@media only screen and (orientation: portrait) {
-
-    body {
-        height: 100vh;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
+    header,
     main,
     .main-content,
     footer,
