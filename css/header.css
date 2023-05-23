@@ -32,7 +32,7 @@ header>nav>.container>ul {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    max-width: 56em;
+    max-width: 48em;
     list-style: none;
 }
 

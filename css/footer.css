@@ -39,12 +39,14 @@ footer nav {
 
 footer ul {
     height: 100%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     list-style: none;
     gap: 0.6em;
-    padding: 1em;
+    padding-inline: 1em;
+    text-align: center;
 }
 
 footer>div>p {
@@ -74,9 +76,9 @@ footer div {
 }
 
 footer>.container>div>img {
-    width: 32%;
+    width: 30%;
     object-fit: contain;
-    padding: 1em;
+    padding-inline: 1em;
 }
 
 footer .socials {
@@ -88,6 +90,7 @@ footer .socials {
     justify-content: center;
     height: fit-content;
     gap: 2em;
+    padding-inline: 1em;
 }
 
 footer .socials ul {
