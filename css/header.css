@@ -32,11 +32,11 @@ header>nav>.container>ul {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    max-width: 54em;
+    max-width: 56em;
     list-style: none;
 }
 
-header>nav>.container>ul li{
+header>nav>.container>ul li {
     height: fit-content;
     overflow: hidden;
 }
@@ -56,7 +56,7 @@ header>nav>.container>ul>li>a:hover {
     background-color: var(--primary-color);
 }
 
-header>nav>.container>ul>li a::after{
+header>nav>.container>ul>li a::after {
     content: '';
     display: block;
     height: 0.1em;
@@ -68,6 +68,6 @@ header>nav>.container>ul>li a::after{
     transition: opacity ease-in-out 250ms;
 }
 
-header>nav>.container>ul>li a.active::after{
+header>nav>.container>ul>li a.active::after {
     opacity: 1;
 }

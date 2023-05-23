@@ -1,0 +1,26 @@
+#prototype {
+    padding-top: 7rem;
+    height: auto;
+    min-height: 100vh;
+    align-items: flex-start;
+}
+
+#prototype>.section-wrapper {
+    height: auto;
+    min-height: calc(100% - 5rem);
+    flex-direction: column;
+    gap: 1em;
+}
+
+#prototype h2 {
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 0.2em;
+    border: 1px solid var(--black);
+    background-color: var(--white);
+    width: 100%;
+    user-select: none;
+}

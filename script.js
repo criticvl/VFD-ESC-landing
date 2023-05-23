@@ -45,3 +45,12 @@ emailSubButton.addEventListener("click", (e) => {
   }
   e.preventDefault();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide("#image-carousel", {
+    type: "slide",
+    perPage: 1,
+    rewind: true,
+    autoplay: false,
+  }).mount();
+});

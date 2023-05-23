@@ -19,7 +19,9 @@
                 <ul>
                     <li><a class="navButton active" href="#home">Home</a></li>
                     <li><a class="navButton" href="#description">Description</a></li>
-                    <li><a class="navButton" href="#hsc">Hardware & Software Components</a></li>
+                    <li><a class="navButton" href="#hardware">Hardware</a></li>
+                    <li><a class="navButton" href="#software">Software</a></li>
+                    <li><a class="navButton" href="#prototype">Prototype & Demonstration</a></li>
                     <li><a class="navButton" href="#team">Team and Contribution</a></li>
                     <li><a class="navButton" href="#contact">Contact</a></li>
                 </ul>
@@ -84,10 +86,59 @@
                 </div>
             </div>
         </section>
-        <section class="container" id="hsc">
+        <section class="container" id="hardware">
             <div class="section-wrapper">
                 <h2>Hardware Components</h2>
+                <div id="image-carousel" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="./assets/asset4.png">
+                                <p>
+                                    STM32F103R8 microcontroller unit _ comes with enough speed and memory, has lots of
+                                    general purpose input-output (GPIO) and peripherals, provides multiple timers with
+                                    enough PWM outputs making it perfect MCU for out project.
+                                </p>
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./assets/asset5.png">
+                                <p>
+                                    IRFP460 N channel mosfets and IR2110 high voltage gate drivers _ these components
+                                    were essential for handling high voltage and power of our prototype.
+                                </p>
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./assets/asset6.png">
+                                <p>
+                                    MAX485 IC _ we used this device for external communication, it converts
+                                    microcontroller’s UART output into one that’s compatible with RS485.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="container" id="software">
+            <div class="section-wrapper">
                 <h2>Software Components</h2>
+                <div class="soft-cards">
+                    <div class="card">
+                        <img src="./assets/asset7.png">
+                        <p>Used for MCU firmware _ microcontroller peripheral configuration, generation of PWM outputs
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/asset8.png">
+                        <p>Used Altium Designer for building PCB design and schematic</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container" id="prototype">
+            <div class="section-wrapper">
+                <h2>Prototype & Demonstration</h2>
             </div>
         </section>
         <section class="container" id="team">
@@ -188,7 +239,9 @@
                     <ul>
                         <li><a class="footerNavButton" href="#home">Home</a></li>
                         <li><a class="footerNavButton" href="#description">Description</a></li>
-                        <li><a class="footerNavButton" href="#hsc">Hardware & Software Components</a></li>
+                        <li><a class="footerNavButton" href="#hardware">Hardware</a></li>
+                        <li><a class="footerNavButton" href="#software">Software</a></li>
+                        <li><a class="footerNavButton" href="#prototype">Prototype & Demonstration</a></li>
                         <li><a class="footerNavButton" href="#team">Team and Contribution</a></li>
                         <li><a class="footerNavButton" href="#contact">Contact</a></li>
                     </ul>
@@ -199,7 +252,9 @@
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./splide.js"></script>
     <script src="./smoothScroll.js"></script>
     <script src="./script.js"></script>
 </body>

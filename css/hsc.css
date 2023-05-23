@@ -1,18 +1,13 @@
-#hsc {
-    padding-top: 7rem;
-    height: auto;
-    min-height: 100vh;
-    align-items: flex-start;
-}
-
-#hsc>.section-wrapper {
-    height: auto;
-    min-height: calc(100% - 5rem);
+#hardware .section-wrapper,
+#software .section-wrapper {
     flex-direction: column;
+    justify-content: space-around;
     gap: 1em;
 }
 
-#hsc h2 {
+#hardware h2,
+#software h2 {
+    display: flex;
     justify-content: center;
     align-items: center;
     color: var(--primary-color);
@@ -21,6 +16,103 @@
     padding: 0.2em;
     border: 1px solid var(--black);
     background-color: var(--white);
-    width: 100%;
     user-select: none;
+    width: 100%;
+}
+
+#hardware .splide {
+    border: 1px solid var(--black);
+    background-color: var(--white);
+    height: 100%;
+    overflow: hidden;
+}
+
+#hardware .splide__list,
+#hardware .splide__track {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+#hardware .splide__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#hardware .splide__slide img {
+    width: 50%;
+    height: 100%;
+    padding: 2em;
+    box-sizing: border-box;
+    object-fit: contain;
+    border: 1px solid var(--black);
+    border-right: none;
+    background-color: var(--white);
+}
+
+#hardware .splide__slide p {
+    width: 50%;
+    height: 100%;
+    padding: 1.2em;
+    color: var(--white);
+    background-color: var(--black);
+    font-size: 1.2rem;
+}
+
+#hardware .splide__pagination__page {
+    background-color: var(--black);
+}
+
+
+#hardware .splide__arrow {
+    background-color: var(--black);
+    color: aliceblue;
+    border: 2px solid var(--white);
+    width: 3.2em;
+    height: 3.2em;
+}
+
+#hardware .splide__arrow svg {
+    fill: var(--white);
+    height: 1.6em;
+    width: 1.6em;
+}
+
+/*  */
+
+#software .soft-cards {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    overflow: hidden;
+}
+
+#software .card {
+    display: flex;
+    align-items: center;
+    height: 48%;
+    gap: 4em;
+    padding: 2em;
+    border: 1px solid var(--black);
+    background-color: var(--white);
+}
+
+#software .soft-cards img {
+    object-fit: contain;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    border: 1px solid var(--black);
+    padding: 1em;
+}
+
+#software .soft-cards p {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: var(--black);
 }
